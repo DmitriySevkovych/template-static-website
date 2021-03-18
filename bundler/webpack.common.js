@@ -11,7 +11,7 @@ module.exports = {
         index: './src/js/index.js'
     },
     output: {
-        path: path.resolve(__dirname, 'dist'),
+        path: path.resolve(__dirname, '../dist'),
         // publicPath: '/dist',
         filename: 'js/[name].bundle.js',
         assetModuleFilename: 'static/[hash][ext][query]'
