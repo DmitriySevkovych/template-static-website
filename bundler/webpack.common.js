@@ -67,14 +67,15 @@ module.exports = {
                 type: 'asset/source', // Webpack 5.x: loads file content into bundled JS file (raw-loader)
                 exclude: /node_modules/
             },
-            { test: /\.(glsl|vs|fs|vert|frag)$/i, loader: 'glslify-loader', exclude: /node_modules/ }
+            // { test: /\.(glsl|vs|fs|vert|frag)$/i, loader: 'glslify-loader', exclude: /node_modules/ }
         ]
     },
     plugins: [
         new MiniCssExtractPlugin(),
         // new StylelintPlugin(),
         new HtmlWebpackPlugin({
-            template: 'src/templates/index.hbs'
+            template: 'src/templates/index.hbs',
+            favicon: './src/assets/icons/favicon.ico'
         })
     ]
 }
