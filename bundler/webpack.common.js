@@ -50,7 +50,7 @@ module.exports = {
             },
             // Images
             {
-                test: /\.(png|jpg|jpeg|gif)$/i,
+                test: /\.(png|jpg|jpeg|gif|webp|avif)$/i,
                 type: 'asset/resource', // Webpack 5.x: loads file into output folter (file-loader)
             },
             {
