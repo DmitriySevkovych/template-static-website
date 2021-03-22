@@ -30,7 +30,8 @@ module.exports = {
                             runtime: path.join(__dirname, 'handlebars.config.js'),
                             precompileOptions: {
                                 knownHelpersOnly: false,
-                            }
+                            },
+                            inlineRequires: '/assets/img/'
                         },
                     }
                 ]
