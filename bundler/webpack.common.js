@@ -31,7 +31,7 @@ module.exports = {
                             precompileOptions: {
                                 knownHelpersOnly: false,
                             },
-                            inlineRequires: '/assets/img/'
+                            inlineRequires: '/assets/*/'
                         },
                     }
                 ]
