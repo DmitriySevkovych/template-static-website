@@ -55,7 +55,8 @@ module.exports = {
             },
             {
                 test: /\.(svg)$/i,
-                type: 'asset/inline',
+                type: 'asset/source' // basically a raw loader
+                // type: 'asset/inline' // 'inlines' image data into img src
             },
             // Fonts
             {
