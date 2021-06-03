@@ -4,6 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 // TODO: work in progress
 // const StylelintPlugin = require('stylelint-webpack-plugin');
+const ESLintPlugin = require('eslint-webpack-plugin');
 
 module.exports = {
     mode: 'development',
@@ -40,7 +41,7 @@ module.exports = {
             {
                 test: /\.(js|jsx)$/,
                 exclude: [/node_modules/, /extlib/],
-                use: ['babel-loader', 'eslint-loader'],
+                use: ['babel-loader'],
                 // options: { presets: ['@babel/env'] }
             },
             // SASS, CSS
@@ -75,6 +76,7 @@ module.exports = {
     plugins: [
         new MiniCssExtractPlugin(),
         // new StylelintPlugin(),
+        new ESLintPlugin(),
         new HtmlWebpackPlugin({
             template: 'src/templates/index.hbs',
             favicon: './src/assets/icons/favicon.ico'

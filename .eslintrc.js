@@ -16,7 +16,7 @@ module.exports = {
         'dollar-sign/dollar-sign': ['error', 'ignoreProperties'],
         'no-plusplus': ['error', { 'allowForLoopAfterthoughts': true }],
         'no-unused-vars': 'warn',
-        'quotes': ['error', 'single'],
+        'quotes': ['warn', 'single'],
         'no-var': 'error',
         'no-console': 'warn',
     }

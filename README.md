@@ -2,7 +2,7 @@
 
 - [x] Configure eslint
 - [ ] Configure stylelint
-- [ ] postcss vs sass
+- [ ] Check browserlist
 - [x] Configure npm scripts
 - [x] Add font and image Webpack loaders
 - [x] Add glsl and glslify Webpack loaders
