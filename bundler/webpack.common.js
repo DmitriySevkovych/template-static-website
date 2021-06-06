@@ -71,6 +71,11 @@ module.exports = {
                 exclude: /node_modules/
             },
             // { test: /\.(glsl|vs|fs|vert|frag)$/i, loader: 'glslify-loader', exclude: /node_modules/ }
+            // Models
+            {
+                test: /\.(glb|gltf|fbx|obj)$/,
+                type: 'asset/resource' // Webpack 5.x: loads file into output folder (file-loader)
+            }
         ]
     },
     plugins: [
